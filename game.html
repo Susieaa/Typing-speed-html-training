@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="script.js"></script>
+  <title>Typing Speed Test</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-passage.css">
+</head>
+<body>
+  <header class="header">
+    <div class="top-header">
+    
+      <img src ="assets/images/logo-large.svg" alt="logo" class="header-left"id="desktop-logo" >
+      <img src ="assets/images/logo-small.svg" alt="logo" class="header-left" id="mobile-logo">
+      <div class="header-right">
+        <img src="assets/images/icon-personal-best.svg" alt="trophy">
+        <p>Personal best: <!-- PB --><span id="record-WPM"> 0 WPM</span></p>
+      </div>
+    </div>
+
+    <div class = "bottom-header" id="bottom-header-id">
+
+      <ul class="top-bottom-header" id="top-bottom-header-id">
+        <li> WPM: <span id="WPM">0</span></li>
+        <li>Accuracy: <span id="Accuracy">0%</span></li>
+        <li id="time">Time:<span id="Time">0:00</span></li>
+      </ul>
+
+      <ul class="bottom-bottom-header" id="bottom-bottom-header-id">
+        <li>  
+          <!-- Wide screen difficulty button -->
+          <div class="button-group" id="button-difficulty">
+            Difficulty:
+            <button class="button-parameters" data-difficulty="easy">Easy</button>
+            <button class="button-parameters" data-difficulty="medium">Medium</button>
+            <button class="button-parameters" data-difficulty="hard">Hard</button>
+          </div>    
+          <!-- Small screen Mode button -->
+          <div class="dropdown-parameters" id="dropdown-difficulty">
+            <button class = "dropbtn">Difficulty </button>
+            <div class="dropdown-content" id="dropdown-content-difficulty">
+              <label><input type="radio" name="difficulty"> Easy</label>
+              <label><input type="radio" name="difficulty"> Medium</label>
+              <label><input type="radio" name="difficulty"> Hard</label>
+            </div>
+          </div>
+        </li>
+        <li>  
+          <!-- Wide screen Mode button -->
+          <div class="button-group" id="button-mode">
+            Mode:
+            <button class="button-parameters"data-mode="timed">Timed (60s)</button>
+            <button class="button-parameters" data-mode="passage">Passage</button>
+          </div>
+          <!-- Small screen Mode button -->
+          <div class="dropdown-parameters" id="dropdown-mode">
+            <button class = "dropbtn">Mode </button>
+            <div class="dropdown-content" id="dropdown-content-mode">
+              <label><input type="radio" name="difficulty"> Timed (60s)</label>
+              <label><input type="radio" name="difficulty"> Passage</label>
+            </div>
+          </div>
+          
+        </li>
+      </ul>
+    </div>
+   
+      
+
+
+
+  </header>
+
+
+
+  <main>
+  <div class="start-scene" id="start-scene">
+        <button onclick="removeStartScene()" class="start-button" >Start Typing Test</button>
+        <p id="start-text">Or click the text and start typing</p>
+  </div>
+    
+  <div class="passage-container">
+    <div class="passage">
+      <p id="passage-text">Hello my name is Susie, i live 
+        in massachussets with my donkeey james.
+         I would like to travel accross
+          Texas to meet Zebras one day.</p>
+    </div>
+  </div> 
+
+  </main>
+ 
+
+
+   
+    
+    <!-- Test Complete End -->
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Suly</a>.
+  </footer>
+  </body>
+</html>

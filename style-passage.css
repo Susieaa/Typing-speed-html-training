@@ -1,0 +1,60 @@
+
+
+
+.passage-container{
+    margin : 10px 40px 20px 40px;  
+    border-bottom :1px solid hsl(240, 3%, 46%);
+    border-top :1px solid hsl(240, 3%, 46%);
+    position: relative;
+    filter: blur(5px);
+    
+}
+.passage{
+    position:relative;
+   
+}
+#passage-text{
+    color :hsl(240, 3%, 46%);
+    font-size: 28px;
+    position: relative;
+    text-align: justify;
+}
+.start-scene{
+    width:100%;
+    height:100%;
+    position: absolute;
+    display:flex;
+    justify-content: center;
+   
+}
+.start-button{
+    background-color: hsl(214, 100%, 55%);
+    border-radius: 7px;
+    border:none;
+    color: hsl(0, 0%, 100%);
+    position:absolute;
+    padding: 10px;
+    font-weight: 600;
+    top: 20%;
+    z-index: 10;
+    cursor: pointer;
+}
+.start-button:hover{
+   background-color:hsl(210, 100%, 65%) ;
+    
+}
+.start-button:focus{
+    outline-color: hsl(210, 100%, 65%);
+    outline-style:solid;
+    outline-offset: 2px;
+    outline-width: 1px;
+    
+}
+#start-text{
+    color: hsl(0, 0%, 100%);
+    position:absolute;
+    top: 25%;
+    z-index: 10;
+}
+
+

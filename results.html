@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <script src="results-script.js"></script>
+    <title>Typing Speed Test</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-passage.css">
+    <link rel="stylesheet" href="style-results.css">
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="top-header">
+            
+            <img src ="assets/images/logo-large.svg" alt="logo" class="header-left"id="desktop-logo" >
+            <img src ="assets/images/logo-small.svg" alt="logo" class="header-left" id="mobile-logo">
+            <div class="header-right">
+                <img src="assets/images/icon-personal-best.svg" alt="trophy">
+                <p>Personal best: <!-- PB --><span id="record-WPM"> 92 WPM</span></p>
+            </div>
+            </div>
+        </header>
+
+        <div class="results-container" id="results-container">
+            <img src="assets/images/icon-completed.svg" id="image-results">
+            <h1>Baseline established !</h1>
+            <p>You've set the bar. now the real challenge begins-time to beat it.</p>
+            <div class="stats-results">
+                <div class="stats"> WPM : <span id="WPM-results">0</span></div>
+                <div class="stats"> Accuracy : <span id="Accuracy">0%</span></div>
+                <div class="stats"> Score : <span id="Score">0</span></div>
+            </div>
+            <button class="restart-button" onclick="restartTest()"> Beat this score <span><img src="assets/images/icon-restart.svg" class="image-restart"></img></span></button>
+        </div>
+    </body>
+</html>
