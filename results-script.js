@@ -17,5 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function restartTest(){
     localStorage.setItem("firstPlay", false);
-    location.replace("./game.html") 
+    location.replace("./index.html") 
+
 }
